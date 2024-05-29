@@ -1,17 +1,14 @@
-package series;
-
-public class PrimeNumber {
+public class PrimeNuber {
         static boolean isPrime(int n, int i)
         {
-
             // Base cases
             if (n <= 2)
-                return (n == 2) ? true : false;
+                return n == 2;
             if (n % i == 0)
                 return false;
             if (i * i > n)
-                return true;
 
+                return true;
             // Check for next divisor
             return isPrime(n, i + 1);
         }
@@ -19,13 +16,12 @@ public class PrimeNumber {
         // Driver program to test above function
         public static void main(String[] args)
         {
-
-            int n = 15;
-
+            int n = 2;
             if (isPrime(n, 2))
-                System.out.println("Yes");
+                System.out.println("Yes it's a Prime");
             else
-                System.out.println("No");
+                System.out.println("Not a Prime");
         }
-}
+    }
+
 
