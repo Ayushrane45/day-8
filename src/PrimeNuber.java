@@ -16,7 +16,7 @@ public class PrimeNuber {
         // Driver program to test above function
         public static void main(String[] args)
         {
-            int n = 2;
+            int n = 12;
             if (isPrime(n, 2))
                 System.out.println("Yes it's a Prime");
             else
